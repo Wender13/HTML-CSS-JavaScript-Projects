@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/site.webmanifest">
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="CalculatorBody">
+        <span id="Screen">
+            <span id="Result"></span>
+            <span id="ActualNumber"></span>
+        </span>
+        <div id="Buttons">
+            <button class="SpecialsButtons" id="Dark_Mode" onclick="ChangeDarkMode()">Dark mode</button>
+            <button class="SpecialsButtons" id="Delete" onclick="RemoveLastNumber()">Delete</button>
+            <button class="SpecialsButtons" onclick="ClearAll()">AC</button>
+            <button class="OperatorsButtons" onclick="SetOperator('/')">/</button>
+            <button class="NumericsButtons" onclick="AddValue(7)">7</button>
+            <button class="NumericsButtons" onclick="AddValue(8)">8</button>
+            <button class="NumericsButtons" onclick="AddValue(9)">9</button>
+            <button class="OperatorsButtons" onclick="SetOperator('*')">*</button>
+            <button class="NumericsButtons" onclick="AddValue(4)">4</button>
+            <button class="NumericsButtons" onclick="AddValue(5)">5</button>
+            <button class="NumericsButtons" onclick="AddValue(6)">6</button>
+            <button class="OperatorsButtons" onclick="SetOperator('-')">-</button>
+            <button class="NumericsButtons" onclick="AddValue(1)">1</button>
+            <button class="NumericsButtons" onclick="AddValue(2)">2</button>
+            <button class="NumericsButtons" onclick="AddValue(3)">3</button>
+            <button class="OperatorsButtons" onclick="SetOperator('+')">+</button>
+            <button class="NumericsButtons" id="Num0" onclick="AddValue(0)">0</button>
+            <button class="NumericsButtons" onclick="AddValue('.')">.</button>
+            <button class="OperatorsButtons" onclick="Result()">=</button>
+        </div>
+    </div>
+    <div id="Message">
+        BackSpace button = Delete; <br>
+        Delete button = AC; <br>
+        D button = Dark mode on/off;
+    </div>
+</body>
+</html>

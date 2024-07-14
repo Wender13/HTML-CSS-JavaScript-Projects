@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/site.webmanifest">
+    <script src="script.js" defer></script>
+    <title>Etch a Sketch</title>
+</head>
+<body>
+    <header>
+        <h1>Etch a Sketch</h1>
+    </header>
+    <main>
+        <div id="SettingsContainer">
+            <input type="color" name="ColorSelected" id="ColorSelected" value="#363636">
+            <button id="ColorButton">Color</button>
+            <button id="RandomizeButton">Randomize</button>
+            <button id="EraserButton">Eraser</button>
+            <button id="ClearButton">Clear</button>
+            <div id="GridContainer">
+                <span>Grid</span>
+                <input type="range" name="GridRange" id="GridRange" value="16" min="1" max="100" >
+                <span id="GridOutput"></span>
+            </div>
+        </div>
+
+        <div id="Grid">
+
+        </div>
+    </main>
+    <footer>
+        <p>
+            Copyright © <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>
+         </p>
+         <p>
+             Made by <a href="https://github.com/wender13" target="_blank">Wender Júnior</a>
+         </p>
+    </footer>
+</body>
+</html>
