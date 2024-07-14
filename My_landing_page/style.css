@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Fira Code';
+    src: url(../Fontes/FiraCode-SemiBold.ttf) format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code';
+    color: white;
+}
+
+body{   
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    background-size: cover;
+    font: normal 15pt Arial;
+    display: grid;
+    place-items: center;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-direction: column;
+    background: transparent;
+    border-radius: 10px;
+    padding: 15px;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+    backdrop-filter: brightness(30%) blur(2px);
+}
+
+div{
+    text-align: center;
+    padding: 8px;
+}
+
+img {
+    height: 2.5em;
+    width: auto;
+}
+
+#relógio, #calendário, #diaSemana {
+    height: fit-content;
+    width: fit-content;
+    font-weight: 600;
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}

@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    font-family:Arial, Verdana, Helvetica, sans-serif;
+}
+
+html {
+    background-image: linear-gradient(180deg, #162D56, #0F5A93);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.Imagem > p > a {
+    color: black;
+}
+
+header, footer {
+    padding: 1.4em;
+    color: white;
+    font-weight: 700;
+}
+
+header {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#LogoSubtitulos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#LogoSubtitulos > a > img {
+    width: 30vw;
+}
+
+main {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 1.5em;
+    border-radius: 2em 2em 0 0;
+}
+
+.Conteudo, .Noticia, .Individual {
+    display: flex;
+    gap: 1.5em;
+}
+
+.Individual {
+    margin-bottom: 1.5em;
+}
+
+#Redação, .Conteudo {
+    border: 1px solid black;
+    border-radius: 16px;
+    margin: .5em;
+    padding: 1em;
+    width: fit-content;
+}
+
+#Redação > h2 {
+    justify-self: flex-start;
+}
+
+.Invertida{
+    flex-direction: row-reverse;
+}
+
+.Conteudo > img, .Individual > img, .Noticia > img {
+    height: fit-content;
+    width: 30%;
+    border-radius: 2em;
+}
+
+
+.Noticia > .Texto, .Individual > .Texto {
+    width: 65%;
+}
+.Imagem {
+    width: 35%;
+    height: fit-content;
+}
+
+.Imagem > img {
+    width: 100%;
+    height: fit-content;
+    border-radius: 1em;
+}
+
+.Texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Texto > p {
+    margin: auto;
+    line-height: 1.5em;
+}
+
+.Texto > h1, h2 {
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+
+.Texto > h2 {
+    width: 100%;
+    text-align: left;
+}
+
+.Noticia {
+    margin: 2em 0;
+    padding: 1em;
+}
+
+.Legenda {
+    font-size: 1em;
+}
+
+#Entrevista {
+    margin: 1em 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Entrevista > p,iframe {
+    width: 70vw;
+}
+
+iframe {
+    margin-top: 2em;
+    height: 75vh;
+    border-radius: 1.4em;
+}
+
+footer {
+    background-color: #162D56;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#LogoRedesSociais {
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+#LogoRedesSociais, footer{
+    display: flex;
+}
+
+#Logo {
+    width: 20vw;
+}
+
+#Logo > a > img {
+    width: 100%;
+}
+
+#RedesSociais > a > img {
+    width: 2em;
+    height: 2em;
+}
+
+#RedesSociais > a:hover{
+    position:relative;
+    bottom: 2px;
+    left: 2px;
+}
+
+#Creditos{
+    text-align: center;
+}
+
+.Imagem > p > a:hover, #Creditos > a:hover {
+    color: darkorange;
+}
+
+#Creditos > a:hover{
+    font-size: 1.1em;
+}
+
+/* Adaptação para telas menores */
+
+@media only screen and (max-width: 650px) {
+    main {
+        max-width: 95%;
+    }
+    #LogoSubtitulos {
+        flex-direction: column;
+    }
+    #LogoSubtitulos > a > img{
+        width: 80vw;
+        justify-content: center;
+    }
+    .Conteudo, .Invertida, .Noticia, .Individual, #Redação {
+        margin: .5em -.9em;
+        padding: .5em;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Conteudo > img, .Noticia > img, .Individual > img, .Imagem {
+        width: 100%;
+        height: 50%;
+    }
+    .Texto > h1, .Texto > h2 {
+        margin-bottom: 1em;
+    }
+
+    .Noticia > .Texto, .Individual > .Texto {
+        width: 100%;
+    }
+
+    #Livro > .Texto > h1 {
+        margin-bottom: 0;
+    }
+    .Texto > h2 {
+        text-align: center;
+        margin-top: 1em;
+    }
+    iframe {
+        margin-top: 2em;
+        width: 100%;
+        height: 35vh;
+        border-radius: 1.4em;
+    }
+    #LogoRedesSociais{
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    #Logo {
+        width: 90%;
+    }
+}
