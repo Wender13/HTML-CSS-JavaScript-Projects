@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 500vh;
+}
+
+.container {
+    background: red;
+    width: 100vw;
+    height: 30vh;
+    margin: 15px 0px;
+    display: grid;
+}
+
+.three {
+    height: 50vh;
+}
+
+#childOne, #childTwo, #childThree {
+    background: black;
+    height: 100px;
+    width: 100px;
+}
+
+#childOne {
+    place-self: end;
+    position: fixed;
+    top: 15px;
+}
+
+#childTwo {
+
+}
+
+#childThree {
+    position: sticky;
+    top: 15px;
+}

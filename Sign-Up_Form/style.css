@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+span {
+    font-size: 1.3em;
+    font-weight: 500;
+    
+}
+
+main {
+    width: 65vw;
+    background: #222222;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+form {
+    background: #414141;
+    width: 60vw;
+    height: 48vh;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.685);
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input {
+    color: black;
+    font-size: .8em;
+    width: 20em;
+    height: 2em;
+}
+
+button {
+    position: relative;
+    top: 20px;
+    right: 8px;
+    font-size: 1.3em;
+    font-weight: 600;
+    width: 250px;
+    height: 50px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: #2a3c50;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.74);
+}
+
+button:active{
+    position:relative;
+    top: 22px;
+    right: 1px;
+    box-shadow: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    font-size: 1em;
+}
+
+a:hover {
+    color: red;
+}
+
+#Sidebar {
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+}
+
+#Sidebar > img {
+    width: 100%;
+    height: 100vh;
+}
+
+#Sidebar > p {
+    font-size: 1.1em;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+#Logo {
+    font-size: 2.7em;
+    width: 28vw;
+    padding: 16px;
+    position: absolute;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: brightness(30%) blur(1px);
+    border-radius: 25px;
+}
+
+#Logo > img {
+    height: 150px;
+    width: 120px;
+}
+
+#Form-Title {
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+#Inputs {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Input {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 4px;
+}
+
+#CreateAccount {
+    position: absolute;
+    bottom: 10px;
+}

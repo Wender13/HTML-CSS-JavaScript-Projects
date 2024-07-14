@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Rock/Paper/Scissors</title>
+</head>
+<body onload="removeButton()">
+    <header>
+        <h1>
+            Rock x Paper x Scissors
+        </h1>
+    </header>
+    <div class="results">
+        <div id="you">
+            Player:
+            <p id="yourScore">
+                X
+            </p>
+        </div>
+        <div id="pc">
+            Computer:
+            <p id="pcScore">
+                X
+            </p>
+        </div>
+    </div>
+    <div id="controls&results">
+        <div id="controls">
+            <div id="Rock" class="buttons" onclick="choiceRock()">
+                <img src="images/rock-button.png" alt="Rock">
+            </div>
+            <div id="Paper" class="buttons" onclick="choicePaper()">
+                <img src="images/paper-button.png" alt="Paper">
+            </div>
+            <div id="Scissor" class="buttons" onclick="choiceScissor()">
+                <img src="images/scissor-button.png" alt="Scissor">
+            </div>
+        </div>
+    </div>
+        <p id="gameResult">
+            The result gonna be showed here...
+        </p>
+        <p id="winner"></p>
+        <div id="restart" onclick="reset()">Reset</div>
+    <footer>
+        <p>
+           Copyright © <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>
+        </p>
+        <p>
+            Made by <a href="https://github.com/wender13" target="_blank">Wender Júnior</a>
+        </p>
+        <p>
+            Icons by <a href="https://icons8.com.br/" target="_blank">Icons8</a>
+        </p>
+    </footer>
+</body>
+</html>

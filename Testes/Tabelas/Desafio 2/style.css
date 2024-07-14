@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+}
+
+table, tr, td, th {
+    border: 2px solid black;
+    padding: 4px 8px;
+}
+
+table {
+    padding: 0;
+}
+
+.cinza {
+    background-color: gray;
+    color: white;
+}
+
+.media {
+    text-align: left;
+}
